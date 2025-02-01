@@ -5,41 +5,71 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #eaeaea;
+    color: #444;
+    line-height: 1.6;
 }
 
 header {
-    background-color: #333;
+    background-color: #2d3e50;
     color: white;
-    padding: 20px;
+    padding: 30px 0;
     text-align: center;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
 h1 {
     margin: 0;
+    font-weight: 600;
 }
 
 main {
     display: flex;
     justify-content: center;
-    padding: 20px;
+    padding: 40px 20px;
 }
 
 .gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 20px;
+    padding: 10px;
 }
 
 .gallery img {
     width: 100%;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
 }
 
 .gallery img:hover {
     transform: scale(1.05);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.gallery .image-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery .image-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.gallery .image-card img {
+    transition: transform 0.5s ease-in-out;
+}
+
+.gallery .image-card:hover img {
+    transform: scale(1.1);
 }
