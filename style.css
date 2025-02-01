@@ -1,61 +1,16 @@
-<style>
-    /* Styling dasar untuk halaman */
-    body {
-        font-family: 'Arial', sans-serif;
-        text-align: center;
-        background: linear-gradient(to right, #ff9a9e, #fad0c4);
-        color: #333;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-    }
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #ffe4e1;
+}
 
-    /* Styling untuk teks ucapan */
-    h1 {
-        font-size: 3rem;
-        color: #fff;
-        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-    }
+.container {
+    margin-top: 50px;
+}
 
-    p {
-        font-size: 1.5rem;
-        color: #fff;
-        margin-top: 10px;
-    }
-
-    /* Styling untuk gambar */
-    img {
-        width: 80%;
-        max-width: 400px;
-        border-radius: 15px;
-        margin-top: 20px;
-        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
-        transition: transform 0.3s ease-in-out;
-    }
-
-    img:hover {
-        transform: scale(1.05);
-    }
-
-    /* Tombol animasi */
-    .btn {
-        display: inline-block;
-        margin-top: 20px;
-        padding: 10px 20px;
-        font-size: 1.2rem;
-        color: white;
-        background-color: #ff6b81;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: background 0.3s ease-in-out;
-    }
-
-    .btn:hover {
-        background-color: #ff4757;
-    }
-</style>
+.foto {
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+    margin: 20px;
+}
